@@ -2,7 +2,7 @@ function initMap() {
     var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer;
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 7,
+        zoom: 10,
         center: { lat: 21.0132800, lng: -101.2743200 }
     });
     directionsDisplay.setMap(map);
@@ -15,6 +15,8 @@ function initMap() {
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     var waypts = [];
     var checkboxArray = document.getElementById('waypoints');
+    var checkboxArray = waypoints;
+    
     for (var i = 0; i < checkboxArray.length; i++) {
         if (checkboxArray.options[i].selected) {
             waypts.push({
@@ -25,11 +27,11 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     }
 
     directionsService.route({
-        origin: document.getElementById('start').value,
+        origin: document.getElementById('start').value,       
         destination: document.getElementById('end').value,
         waypoints: waypts,
         optimizeWaypoints: true,
-        travelMode: 'DRIVING'
+        travelMode: 'WALKING'
     }, function (response, status) {
         if (status === 'OK') {
             directionsDisplay.setDirections(response);

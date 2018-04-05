@@ -6,22 +6,23 @@
   <meta charset="utf-8">
   <title>Direcciones</title>
   <link rel="stylesheet" href="../css/vendors/maprutas.css">
+  <link rel="stylesheet" href="../css/vendors/lugares.css">
 </head>
 
 <body>
   <div id="map"></div>
   <div id="right-panel">
-    <div>
-      <b>Seleccione Primera ruta</b>
+    <div class="background-alpha">
+      <h3>Seleccione Primera ruta</h3>
       <select id="start">
         <option value="Museo de las Momias de Guanajuato">Museo de las Momias de Guanajuato</option>
         <option value="Alhóndiga de Granaditas">Alhóndiga de Granaditas</option>
         <option value="Museo iconográfico del Quijote">Museo iconográfico del Quijote</option>
         <option value="Museo del Pueblo de Guanajuato">Museo del Pueblo de Guanajuato</option>
-        <option value="Museo Casa Diego">Museo Casa Diego </option>
+        <!-- <option value="Museo Casa Diego">Museo Casa Diego </option> -->
       </select>
       <br>
-      <b>Destino:</b>
+      <h3>Destino:</h3>
       <br>
       <!-- <i>(Ctrl+Click or Cmd+Click for multiple selection)</i> <br> -->
       <select multiple id="waypoints">
@@ -32,16 +33,16 @@
         <option value="Casa Museo José Alfredo Jiménez">Casa Museo José Alfredo Jiménez</option>
       </select>
       <br>
-      <b>Tercer sugerencia:</b>
+      <h3>Tercer sugerencia:</h3>
       <select id="end">
         <option value="Parque Bicentenario De Silao">Parque Bicentenario De Silao</option>
         <option value="Cañada de la Virgen">Cañada de la Virgen</option>
         <option value="Zona Arqueológica de Peralta">Zona Arqueológica de Peralta</option>
         <option value="Museo Casa El Purgatorio">Museo Casa El Purgatorio</option>
-        <option value="Museo de La Ciudad">Museo de La Ciudad</option>
       </select>
       <br>
-      <input type="submit" id="submit">
+      <button type="submit" id="submit">Ver ruta</button>
+      <!-- <input type="submit" id="submit"> -->
     </div>
     <div id="directions-panel"></div>
   </div>

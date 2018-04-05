@@ -15,38 +15,39 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container background-alpha">
         <div class="row">
-            <div class="col-12">
+            <div class="list">
                 <h3> Museo de las momias de Guanajuato </h3>
-                <form>
-                    <span><input type="checkbox" id="checkbox">El café de las momias</span>   
-                    <span><input type="checkbox" id="checkbox1"> Panteón Santa Paula</span> 
-                    <span><input type="checkbox" id="checkbox2"> Iglesia Adventista del séptimo día Guanajuato</span> 
+                <form >
+                    <span><input value="Museo de las Momias de Guanajuato" type="checkbox" id="checkbox">Museo de las Momias de Guanajuato</span>   
+                    <span><input value="Alhóndiga de Granaditas" type="checkbox" id="checkbox1">Alhóndiga de Granaditas</span> 
+                    <span><input value="Museo iconográfico del Quijote" type="checkbox" id="checkbox2">Museo iconográfico del Quijote</span> 
+                    <span><input value="Museo del Pueblo de Guanajuato" type="checkbox" id="checkbox2">Museo del Pueblo de Guanajuato</span> 
                 </form>
             </div>
-            <div class="col-12">
+            <div class="list">
                 <h3> Museo Regional de Guanajuato Alhóndiga </h3>
-                <form>
-                    <span><input type="checkbox" id="checkbox3"> Museo de cera</span> 
-                    <span><input type="checkbox" id="checkbox4"> Biblioteca Armando Olivares y Archivo Histórico UG</span> 
-                    <span><input type="checkbox" id="checkbox5"> Foro Cultural 81</span> 
-                    <span><input type="checkbox" id="checkbox6"> Mercado Hidalgo</span> 
-                    <span><input type="checkbox" id="checkbox7"> El patrocinio GTO</span>
+                <form >
+                    <span><input value="Casa Museo Gene Byron" type="checkbox" id="checkbox3">Casa Museo Gene Byron</span> 
+                    <span><input value="Casa de Tía Aura" type="checkbox" id="checkbox4">Casa de Tía Aura</span> 
+                    <span><input value="Casa de las Leyendas de Guanajuato" type="checkbox" id="checkbox5">Casa de las Leyendas de Guanajuato</span> 
+                    <span><input value="Casa de los lamentos" type="checkbox" id="checkbox6">Casa de los lamentos</span> 
+                    <span><input value="Casa Museo José Alfredo Jiménez" type="checkbox" id="checkbox7">Casa Museo José Alfredo Jiménez</span>
                 </form>
             </div>
-            <div class="col-12">
+            <div class="list">
                 <h3> Museo iconográfico del Quijote </h3>
                 <form>
-                    <span><input type="checkbox" id="checkbox8"> Museo de San Francisco</span> 
-                    <span><input type="checkbox" id="checkbox9"> Monumento Jorge Negrete</span> 
-                    <span><input type="checkbox" id="checkbox10"> Centro Histórico Gto</span> 
-                    <span><input type="checkbox" id="checkbox11"> Teatro Juárez </span> 
+                    <span><input value="Parque Bicentenario De Silao" type="checkbox" id="checkbox8">Parque Bicentenario De Silao</span> 
+                    <span><input value="Cañada de la Virgen" type="checkbox" id="checkbox9">Cañada de la Virgen</span> 
+                    <span><input value="Zona Arqueológica de Peralta" type="checkbox" id="checkbox10">Zona Arqueológica de Peralta</span> 
+                    <span><input value="Museo Casa El Purgatorio" type="checkbox" id="checkbox11">Museo Casa El Purgatorio</span> 
                     <span><input type="checkbox" id="checkbox12"> La puerta azul </span> 
                     <span><input type="checkbox" id="checkbox13"> Información turística Plaza Allende </span> 
                 </form>
             </div>
-            <div class="col-12">
+            <div class="list">
                 <h3> Museo Casa Diego Rivera </h3>
                 <form>
                     <span><input type="checkbox" id="checkbo14"> Museo del siglo XIX</span> 
@@ -57,7 +58,7 @@
                     <span><input type="checkbox" id="checkbox19"> Foro Cultural 81</span>   
                 </form>
             </div>
-            <div class="col-12">
+            <div class="list">
                 <h3> Museo del Pueblo de Guanajuato </h3>
                 <form>
                     <span><input type="checkbox" id="checkbox20"> Basílica Colegiata de Nuestra Señora de Guanajuato</span>
@@ -67,10 +68,14 @@
                     <span><input type="checkbox" id="checkbox24"> Museo Palacio de los Poderes</span>
                 </form>
             </div>
-            <div>
-                <a class="btn" href="#"> Trazar ruta </a>
+            <div id="ruta">
+                <a id="color-azul" class="btn" href="map.html"> Trazar ruta </a>
             </div>
         </div>
     </div>
+    
+    <!-- <script src="../js/vendors/maprutas.js"></script> -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIdxjSv6ryGgndpGEofce3YfLSTJV-W7g&callback=initMap">
+        </script>
 </body>
 </html>
